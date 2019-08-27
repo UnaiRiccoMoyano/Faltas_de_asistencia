@@ -1,0 +1,787 @@
+* { 
+    margin:0px;
+    padding:0pc;
+}
+
+body { 
+    background-color: #262121;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #C4C4C4;
+    display: grid;
+    grid-template-columns: 5% 5% 35% 10% 35% 5% 5%;
+    grid-template-rows: 80px;
+}
+
+header img { 
+    width: 90px;
+    height: auto;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+header h1 { 
+    grid-row: 1/2;
+    grid-column: 4/5;
+    text-align: center;
+    padding-top: 18px;
+    box-sizing: border-box;
+}
+
+#listaPersonas { 
+    margin-top: 3px;
+    display: grid;
+    row-gap: 3px;
+    column-gap: 3px;
+    grid-template-columns: 40% 10% 15% 10% 15% 1fr;
+    grid-template-rows: 35px 35px 35px 35px 35px 35px 35px 35px  35px 35px 35px 35px 35px 35px 35px 35px  35px 35px 35px 35px 35px 35px 35px 35px ;
+}
+
+@media (max-width:600px) {
+    #listaPersonas {
+        margin-top: 3px;
+    display: grid;
+    row-gap: 3px;
+    column-gap: 3px;
+    grid-template-columns: 43% 11% 12% 11% 12% 1fr;
+    grid-template-rows: 35px 35px 35px 35px 35px 35px 35px 35px  35px 35px 35px 35px 35px 35px 35px 35px  35px 35px 35px 35px 35px 35px 35px 35px ;
+    }
+}
+
+
+.persona1 { 
+    background-color:#978E8E;
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.faltas1 { 
+    background-color: #978E8E;
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.numFaltas1 { 
+    background-color: #978E8E;
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+
+.retrasos1 { 
+    background-color: #978E8E;
+    grid-row: 1/2;
+    grid-column: 4/5;
+}
+
+.numRetrasos1 {
+    background-color: #978E8E;
+    grid-row: 1/2;
+    grid-column: 5/6;
+}
+
+.persona2 { 
+    background-color:#978E8E;
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.faltas2 { 
+    background-color: #978E8E;
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.numFaltas2 { 
+    background-color: #978E8E;
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+
+.retrasos2 { 
+    background-color: #978E8E;
+    grid-row: 2/3;
+    grid-column: 4/5;
+}
+
+.numRetrasos2 {
+    background-color: #978E8E;
+    grid-row: 2/3;
+    grid-column: 5/6;
+}
+
+.persona3 { 
+    background-color:#978E8E;
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+
+.faltas3 { 
+    background-color: #978E8E;
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+.numFaltas3 { 
+    background-color: #978E8E;
+    grid-row: 3/4;
+    grid-column: 3/4;
+}
+
+.retrasos3 { 
+    background-color: #978E8E;
+    grid-row: 3/4;
+    grid-column: 4/5;
+}
+
+.numRetrasos3 {
+    background-color: #978E8E;
+    grid-row: 3/4;
+    grid-column: 5/6;
+}
+
+.persona4 { 
+    background-color:#978E8E;
+    grid-row: 4/5;
+    grid-column: 1/2;
+}
+
+.faltas4 { 
+    background-color: #978E8E;
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+
+.numFaltas4 { 
+    background-color: #978E8E;
+    grid-row: 4/5;
+    grid-column: 3/4;
+}
+
+.retrasos4 { 
+    background-color: #978E8E;
+    grid-row: 4/5;
+    grid-column: 4/5;
+}
+
+.numRetrasos4 {
+    background-color: #978E8E;
+    grid-row: 4/5;
+    grid-column: 5/6;
+}
+
+.persona5 { 
+    background-color:#978E8E;
+    grid-row: 5/6;
+    grid-column: 1/2;
+}
+
+.faltas5 { 
+    background-color: #978E8E;
+    grid-row: 5/6;
+    grid-column: 2/3;
+}
+
+.numFaltas5 { 
+    background-color: #978E8E;
+    grid-row: 5/6;
+    grid-column: 3/4;
+}
+
+.retrasos5 { 
+    background-color: #978E8E;
+    grid-row: 5/6;
+    grid-column: 4/5;
+}
+
+.numRetrasos5 {
+    background-color: #978E8E;
+    grid-row: 5/6;
+    grid-column: 5/6;
+}
+
+
+.persona6 { 
+    background-color:#978E8E;
+    grid-row: 6/7;
+    grid-column: 1/2;
+}
+
+.faltas6 { 
+    background-color: #978E8E;
+    grid-row: 6/7;
+    grid-column: 2/3;
+}
+
+.numFaltas6 { 
+    background-color: #978E8E;
+    grid-row: 6/7;
+    grid-column: 3/4;
+}
+
+.retrasos6 { 
+    background-color: #978E8E;
+    grid-row: 6/7;
+    grid-column: 4/5;
+}
+
+.numRetrasos6 {
+    background-color: #978E8E;
+    grid-row: 6/7;
+    grid-column: 5/6;
+}
+
+.persona7 { 
+    background-color:#978E8E;
+    grid-row: 7/8;
+    grid-column: 1/2;
+}
+
+.faltas7 { 
+    background-color: #978E8E;
+    grid-row: 7/8;
+    grid-column: 2/3;
+}
+
+.numFaltas7 { 
+    background-color: #978E8E;
+    grid-row: 7/8;
+    grid-column: 3/4;
+}
+
+.retrasos7 { 
+    background-color: #978E8E;
+    grid-row: 7/8;
+    grid-column: 4/5;
+}
+
+.numRetrasos7 {
+    background-color: #978E8E;
+    grid-row: 7/8;
+    grid-column: 5/6;
+}
+
+.persona8 { 
+    background-color:#978E8E;
+    grid-row: 8/9;
+    grid-column: 1/2;
+}
+
+.faltas8 { 
+    background-color: #978E8E;
+    grid-row: 8/9;
+    grid-column: 2/3;
+}
+
+.numFaltas8 { 
+    background-color: #978E8E;
+    grid-row: 8/9;
+    grid-column: 3/4;
+}
+
+.retrasos8 { 
+    background-color: #978E8E;
+    grid-row: 8/9;
+    grid-column: 4/5;
+}
+
+.numRetrasos8 {
+    background-color: #978E8E;
+    grid-row: 8/9;
+    grid-column: 5/6;
+}
+
+.persona9 { 
+    background-color:#978E8E;
+    grid-row: 9/10;
+    grid-column: 1/2;
+}
+
+.faltas9 { 
+    background-color: #978E8E;
+    grid-row: 9/10;
+    grid-column: 2/3;
+}
+
+.numFaltas9 { 
+    background-color: #978E8E;
+    grid-row: 9/10;
+    grid-column: 3/4;
+}
+
+.retrasos9 { 
+    background-color: #978E8E;
+    grid-row: 9/10;
+    grid-column: 4/5;
+}
+
+.numRetrasos9 {
+    background-color: #978E8E;
+    grid-row: 9/10;
+    grid-column: 5/6;
+}
+
+.persona10 { 
+    background-color:#978E8E;
+    grid-row: 10/11;
+    grid-column: 1/2;
+}
+
+.faltas10 { 
+    background-color: #978E8E;
+    grid-row: 10/11;
+    grid-column: 2/3;
+}
+
+.numFaltas10 { 
+    background-color: #978E8E;
+    grid-row: 10/11;
+    grid-column: 3/4;
+}
+
+.retrasos10 { 
+    background-color: #978E8E;
+    grid-row: 10/11;
+    grid-column: 4/5;
+}
+
+.numRetrasos10 {
+    background-color: #978E8E;
+    grid-row: 10/11;
+    grid-column: 5/6;
+}
+
+.persona11 { 
+    background-color:#978E8E;
+    grid-row: 11/12;
+    grid-column: 1/2;
+}
+
+.faltas11 { 
+    background-color: #978E8E;
+    grid-row: 11/12;
+    grid-column: 2/3;
+}
+
+.numFaltas11 { 
+    background-color: #978E8E;
+    grid-row: 11/12;
+    grid-column: 3/4;
+}
+
+.retrasos11 { 
+    background-color: #978E8E;
+    grid-row: 11/12;
+    grid-column: 4/5;
+}
+
+.numRetrasos11 {
+    background-color: #978E8E;
+    grid-row: 11/12;
+    grid-column: 5/6;
+}
+
+.persona12 { 
+    background-color:#978E8E;
+    grid-row: 12/13;
+    grid-column: 1/2;
+}
+
+.faltas12 { 
+    background-color: #978E8E;
+    grid-row: 12/13;
+    grid-column: 2/3;
+}
+
+.numFaltas12 { 
+    background-color: #978E8E;
+    grid-row: 12/13;
+    grid-column: 3/4;
+}
+
+.retrasos12 { 
+    background-color: #978E8E;
+    grid-row: 12/13;
+    grid-column: 4/5;
+}
+
+.numRetrasos12 {
+    background-color: #978E8E;
+    grid-row: 12/13;
+    grid-column: 5/6;
+}
+
+.persona13 { 
+    background-color:#978E8E;
+    grid-row: 13/14;
+    grid-column: 1/2;
+}
+
+.faltas13 { 
+    background-color: #978E8E;
+    grid-row: 13/14;
+    grid-column: 2/3;
+}
+
+.numFaltas13 { 
+    background-color: #978E8E;
+    grid-row: 13/14;
+    grid-column: 3/4;
+}
+
+.retrasos13 { 
+    background-color: #978E8E;
+    grid-row: 13/14;
+    grid-column: 4/5;
+}
+
+.numRetrasos13 {
+    background-color: #978E8E;
+    grid-row: 13/14;
+    grid-column: 5/6;
+}
+
+.persona14 { 
+    background-color:#978E8E;
+    grid-row: 14/15;
+    grid-column: 1/2;
+}
+
+.faltas14 { 
+    background-color: #978E8E;
+    grid-row: 14/15;
+    grid-column: 2/3;
+}
+
+.numFaltas14 { 
+    background-color: #978E8E;
+    grid-row: 14/15;
+    grid-column: 3/4;
+}
+
+.retrasos14 { 
+    background-color: #978E8E;
+    grid-row: 14/15;
+    grid-column: 4/5;
+}
+
+.numRetrasos14 {
+    background-color: #978E8E;
+    grid-row: 14/15;
+    grid-column: 5/6;
+}
+
+
+.persona15 { 
+    background-color:#978E8E;
+    grid-row: 15/16;
+    grid-column: 1/2;
+}
+
+.faltas15 { 
+    background-color: #978E8E;
+    grid-row: 15/16;
+    grid-column: 2/3;
+}
+
+.numFaltas15 { 
+    background-color: #978E8E;
+    grid-row: 15/16;
+    grid-column: 3/4;
+}
+
+.retrasos15 { 
+    background-color: #978E8E;
+    grid-row: 15/16;
+    grid-column: 4/5;
+}
+
+.numRetrasos15 {
+    background-color: #978E8E;
+    grid-row: 15/16;
+    grid-column: 5/6;
+}
+
+.persona16 { 
+    background-color:#978E8E;
+    grid-row: 16/17;
+    grid-column: 1/2;
+}
+
+.faltas16 { 
+    background-color: #978E8E;
+    grid-row: 16/17;
+    grid-column: 2/3;
+}
+
+.numFaltas16 { 
+    background-color: #978E8E;
+    grid-row: 16/17;
+    grid-column: 3/4;
+}
+
+.retrasos16 { 
+    background-color: #978E8E;
+    grid-row: 16/17;
+    grid-column: 4/5;
+}
+
+.numRetrasos16 {
+    background-color: #978E8E;
+    grid-row: 16/17;
+    grid-column: 5/6;
+}
+
+.persona17 { 
+    background-color:#978E8E;
+    grid-row: 17/18;
+    grid-column: 1/2;
+}
+
+.faltas17 { 
+    background-color: #978E8E;
+    grid-row: 17/18;
+    grid-column: 2/3;
+}
+
+.numFaltas17 { 
+    background-color: #978E8E;
+    grid-row: 17/18;
+    grid-column: 3/4;
+}
+
+.retrasos17 { 
+    background-color: #978E8E;
+    grid-row: 17/18;
+    grid-column: 4/5;
+}
+
+.numRetrasos17 {
+    background-color: #978E8E;
+    grid-row: 17/18;
+    grid-column: 5/6;
+}
+
+.persona18 { 
+    background-color:#978E8E;
+    grid-row: 18/19;
+    grid-column: 1/2;
+}
+
+.faltas18 { 
+    background-color: #978E8E;
+    grid-row: 18/19;
+    grid-column: 2/3;
+}
+
+.numFaltas18 { 
+    background-color: #978E8E;
+    grid-row: 18/19;
+    grid-column: 3/4;
+}
+
+.retrasos18 { 
+    background-color: #978E8E;
+    grid-row: 18/19;
+    grid-column: 4/5;
+}
+
+.numRetrasos18 {
+    background-color: #978E8E;
+    grid-row: 18/19;
+    grid-column: 5/6;
+}
+
+.persona19 { 
+    background-color:#978E8E;
+    grid-row: 19/20;
+    grid-column: 1/2;
+}
+
+.faltas19 { 
+    background-color: #978E8E;
+    grid-row: 19/20;
+    grid-column: 2/3;
+}
+
+.numFaltas19 { 
+    background-color: #978E8E;
+    grid-row: 19/20;
+    grid-column: 3/4;
+}
+
+.retrasos19 { 
+    background-color: #978E8E;
+    grid-row: 19/20;
+    grid-column: 4/5;
+}
+
+.numRetrasos19 {
+    background-color: #978E8E;
+    grid-row: 19/20;
+    grid-column: 5/6;
+}
+
+.persona20 { 
+    background-color:#978E8E;
+    grid-row: 20/21;
+    grid-column: 1/2;
+}
+
+.faltas20 { 
+    background-color: #978E8E;
+    grid-row: 20/21;
+    grid-column: 2/3;
+}
+
+.numFaltas20 { 
+    background-color: #978E8E;
+    grid-row: 20/21;
+    grid-column: 3/4;
+}
+
+.retrasos20 { 
+    background-color: #978E8E;
+    grid-row: 20/21;
+    grid-column: 4/5;
+}
+
+.numRetrasos20 {
+    background-color: #978E8E;
+    grid-row: 20/21;
+    grid-column: 5/6;
+}
+
+.persona21 { 
+    background-color:#978E8E;
+    grid-row: 21/22;
+    grid-column: 1/2;
+}
+
+.faltas21 { 
+    background-color: #978E8E;
+    grid-row: 21/22;
+    grid-column: 2/3;
+}
+
+.numFaltas21 { 
+    background-color: #978E8E;
+    grid-row: 21/22;
+    grid-column: 3/4;
+}
+
+.retrasos21 { 
+    background-color: #978E8E;
+    grid-row: 21/22;
+    grid-column: 4/5;
+}
+
+.numRetrasos21 {
+    background-color: #978E8E;
+    grid-row: 21/22;
+    grid-column: 5/6;
+}
+
+.persona22 { 
+    background-color:#978E8E;
+    grid-row: 22/23;
+    grid-column: 1/2;
+}
+
+.faltas22 { 
+    background-color: #978E8E;
+    grid-row: 22/23;
+    grid-column: 2/3;
+}
+
+.numFaltas22 { 
+    background-color: #978E8E;
+    grid-row: 22/23;
+    grid-column: 3/4;
+}
+
+.retrasos22{ 
+    background-color: #978E8E;
+    grid-row: 22/23;
+    grid-column: 4/5;
+}
+
+.numRetrasos22 {
+    background-color: #978E8E;
+    grid-row: 22/23;
+    grid-column: 5/6;
+}
+
+.persona23 { 
+    background-color:#978E8E;
+    grid-row: 23/24;
+    grid-column: 1/2;
+}
+
+.faltas23 { 
+    background-color: #978E8E;
+    grid-row: 23/24;
+    grid-column: 2/3;
+}
+
+.numFaltas23 { 
+    background-color: #978E8E;
+    grid-row: 23/24;
+    grid-column: 3/4;
+}
+
+.retrasos23 { 
+    background-color: #978E8E;
+    grid-row: 23/24;
+    grid-column: 4/5;
+}
+
+.numRetrasos23{
+    background-color: #978E8E;
+    grid-row: 23/24;
+    grid-column: 5/6;
+}
+
+.persona24 { 
+    background-color:#978E8E;
+    grid-row: 24/25;
+    grid-column: 1/2;
+}
+
+.faltas24 { 
+    background-color: #978E8E;
+    grid-row: 24/25;
+    grid-column: 2/3;
+}
+
+.numFaltas24 { 
+    background-color: #978E8E;
+    grid-row: 24/25;
+    grid-column: 3/4;
+}
+
+.retrasos24 { 
+    background-color: #978E8E;
+    grid-row: 24/25;
+    grid-column: 4/5;
+}
+
+.numRetrasos24 {
+    background-color: #978E8E;
+    grid-row: 24/25;
+    grid-column: 5/6;
+}
+
+main h4 { 
+    padding: 9px;
+    box-sizing: border-box;
+}
+
+main h5 { 
+    padding: 9px;
+    box-sizing: border-box;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bienvenido</title>
+    <link rel="stylesheet" type="text/css" href="user.css">
+</head>
+
+<body onload="actualizaReloj()">
+    <header>
+            <div id="logo">
+                    <img src="img/logoF5.png" alt="FactoriaF5">
+            </div>
+    </header>
+    <main>
+        <div id="titulo">
+            <h1>Buenos días: Nombre Apellido</h1>
+        </div>
+        <div id="contenido">
+            <form action="/submit-cat-photo">
+                <label for="asist"><input type="checkbox" name="asistido"> He asistido a classe</label>
+            </br>
+                <label for="noAsist"><input type="checkbox" name="asistido">No he asistido a
+                    classe</label><br>
+
+                <input type="text" placeholder="Como estàs hoy?" required>
+        </div>
+
+        <div id="enviar">
+                <button type="submit">He llegado a clase</button>
+        </div>
+    </main>
+
+    <footer>
+        <table><tr><td id="Fecha_Reloj"></td></tr></table>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

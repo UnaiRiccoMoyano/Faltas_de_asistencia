@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Enviar Justificante</title>
+    <link rel="stylesheet" type="text/css" href="user.css">
+</head>
+
+<body onload="actualizaReloj()">
+    <header>
+
+        <div id="atras">
+            <a href="inicio.html"> <img src="img/iconoAtras.svg" alt=""></a>
+        </div>
+
+        <div id="logo">
+            <img src="img/logoF5.png" alt="FactoriaF5">
+        </div>
+    </header>
+    <main>
+        <div id="titulo">
+            <h1>Soy Nombre y Apellido, y quiero enviar mi justificante ahora</h1>
+        </div>
+        <div id="enviar" style="margin-top: -15px;">
+            <form action="/justificante">
+                <button type="submit" class="justificante">Adjunto justificante</button>
+            </form>
+        </div>
+    </main>
+
+    <footer style="margin-top: -30px">
+        <table>
+            <tr>
+                <td id="Fecha_Reloj"></td>
+            </tr>
+        </table>
+    </footer>
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
