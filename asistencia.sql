@@ -8,19 +8,19 @@ SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 
 -- -----------------------------------------------------
--- Schema mydb
+-- Schema asistanceDB
 -- -----------------------------------------------------
 
 -- -----------------------------------------------------
--- Schema mydb
+-- Schema asistanceDB
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET utf8 ;
-USE `mydb` ;
+CREATE SCHEMA IF NOT EXISTS `asistanceDB` DEFAULT CHARACTER SET utf8 ;
+USE `asistanceDB` ;
 
 -- -----------------------------------------------------
--- Table `mydb`.`user`
+-- Table `asistanceDB`.`user`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`user` (
+CREATE TABLE IF NOT EXISTS `asistanceDB`.`user` (
   `user_id` INT NOT NULL AUTO_INCREMENT,
   `user_name` VARCHAR(20) NULL,
   `user_surname` VARCHAR(25) NULL,
@@ -34,9 +34,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`user_assistance`
+-- Table `asistanceDB`.`user_assistance`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`user_assistance` (
+CREATE TABLE IF NOT EXISTS `asistanceDB`.`user_assistance` (
   `user_assistance_id` INT NOT NULL AUTO_INCREMENT,
   `user_delay` TINYINT(1) NULL,
   `user_absence` TINYINT(1) NULL,
@@ -48,9 +48,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`user_count_absence`
+-- Table `asistanceDB`.`user_count_absence`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`user_count_absence` (
+CREATE TABLE IF NOT EXISTS `asistanceDB`.`user_count_absence` (
   `user_absence_id` INT NOT NULL,
   `user_absence_total` INT ZEROFILL NULL,
   PRIMARY KEY (`user_absence_id`))
@@ -58,9 +58,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`user_count_delay`
+-- Table `asistanceDB`.`user_count_delay`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`user_count_delay` (
+CREATE TABLE IF NOT EXISTS `asistanceDB`.`user_count_delay` (
   `user_delay_id` INT NOT NULL,
   `user_delay_total` INT ZEROFILL NULL,
   PRIMARY KEY (`user_delay_id`))
@@ -68,9 +68,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`user_type`
+-- Table `asistanceDB`.`user_type`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`user_type` (
+CREATE TABLE IF NOT EXISTS `asistanceDB`.`user_type` (
   `user_type_id` INT NOT NULL,
   `user_type` TINYINT(1) ZEROFILL NOT NULL,
   `user_user_id` INT NOT NULL,
@@ -84,22 +84,22 @@ CREATE TABLE IF NOT EXISTS `mydb`.`user_type` (
   INDEX `fk_user_type_user_assistance1_idx` (`user_assistance_user_assistance_id` ASC),
   CONSTRAINT `fk_user_type_user1`
     FOREIGN KEY (`user_user_id`)
-    REFERENCES `mydb`.`user` (`user_id`)
+    REFERENCES `asistanceDB`.`user` (`user_id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_user_type_user_count_delay1`
     FOREIGN KEY (`user_count_delay_user_delay_id`)
-    REFERENCES `mydb`.`user_count_delay` (`user_delay_id`)
+    REFERENCES `asistanceDB`.`user_count_delay` (`user_delay_id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_user_type_user_count_absence1`
     FOREIGN KEY (`user_count_absence_user_absence_id`)
-    REFERENCES `mydb`.`user_count_absence` (`user_absence_id`)
+    REFERENCES `asistanceDB`.`user_count_absence` (`user_absence_id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_user_type_user_assistance1`
     FOREIGN KEY (`user_assistance_user_assistance_id`)
-    REFERENCES `mydb`.`user_assistance` (`user_assistance_id`)
+    REFERENCES `asistanceDB`.`user_assistance` (`user_assistance_id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
