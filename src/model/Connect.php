@@ -20,15 +20,7 @@ class Connect
         }
         return $con;
     }
-    function estoyConectado(){
-        $connectado = $this->connectDDBB();
-        
-        if ($connectado) {
-            return "Estoy conectado";
-        }
-    }
+    
     
 
 }
-$t = new Connect();
-$t->estoyConectado();

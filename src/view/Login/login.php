@@ -1,3 +1,6 @@
+<?php 
+include '../../../vendor/autoload.php';
+?>
 <!doctype html>
 <html lang="es-ES">
 
@@ -21,24 +24,24 @@
 
     <main>
 
-        <form action="admin-page.php" method="post">
+        <form action="../../model/Login_user.php" method="post">
             <div id="login">
 
                 <div id="logUser">
-                    <input type="text" class="userPass" name="texto" placeholder="Usuario/Email">
+                    <input type="text" class="userPass" name="dni" placeholder="DNI">
                 </div>
 
                 <div id="logContra">
-                    <input type="text" class="userPass" name="texto" placeholder="Contraseña">
+                    <input type="text" class="userPass" name="password" placeholder="Password">
                 </div>
 
-                <a class="boton" href="#">Acceder</a>
+                <input type="submit" class="boton" name="Acceder" value="Acceder">
                 <div class="guardarPass">
                     <label for="remember-me">Remember me</label> <input type="checkbox" name="remember">
                 </div>
                 <div id="registrarse">
                     <p>No tienes una cuenta? Si quieres registrarte dale <a class="link"
-                            href="datos_usuario.html">aquí</a></p>
+                            href="register.php">aquí</a></p>
                 </div>
             </div>
 

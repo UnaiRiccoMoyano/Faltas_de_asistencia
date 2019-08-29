@@ -4,7 +4,6 @@
 
 include "../../vendor/autoload.php";
 
-use Connection\Connect;
 use NewRegistration\RegisterNewUser;
 
 
@@ -23,14 +22,15 @@ class Register_user extends RegisterNewUser {
         $surname = $_POST["surname"];
          $dni = $_POST["dni"];
         $email = $_POST["email"];
-        $password1 = $_POST["password"];
+        $password = $_POST["password"];
     
-        $query = "INSERT INTO user(user_name, user_surname, user_dni, user_password, user_mail) VALUES ('$name', '$surname','$dni','$email', '$password')";
+        $query = "INSERT INTO user(user_name, user_surname, user_dni, user_mail , user_password) VALUES ('$name', '$surname','$dni','$email', '$password')";
         $newConnect = $this->NewRegister($query);
 
     
     }
 
+    
 
 }
 

@@ -1,13 +1,13 @@
 {
     "require-dev": {
-        "phpunit/phpunit": "^8"
+        "phpunit/phpunit": "8"
     },
 
     "autoload": {
         "psr-4":{
             "Connection\\": "src/model",
-            "NewRegistration\\":"src/controller"
+            "NewRegistration\\":"src/controller",
+            "NewLogin\\":"src/controller"
         }
     }
 }
-
