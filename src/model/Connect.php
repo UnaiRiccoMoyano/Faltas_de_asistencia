@@ -1,6 +1,6 @@
 <?php
 
-namespace Connections;
+namespace Connection;
 
 class Connect
 {
@@ -9,6 +9,7 @@ class Connect
     private $userName = "ninjaCoders";
     private $password = "qwerty123";
     private $database = "asistanceDB";
+   
 
 
     function connectDDBB()
@@ -26,6 +27,8 @@ class Connect
             return "Estoy conectado";
         }
     }
+    
+
 }
 $t = new Connect();
 $t->estoyConectado();

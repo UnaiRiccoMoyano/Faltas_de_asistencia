@@ -4,8 +4,9 @@
     },
 
     "autoload": {
-        "psr-4": {
-            "Connection\\": "src/controller"
+        "psr-4":{
+            "Connection\\": "src/model",
+            "NewRegistration\\":"src/controller"
         }
     }
 }

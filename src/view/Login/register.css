@@ -119,17 +119,17 @@ header img {
 }
 
 #palabra8 { 
-    grid-row: 8/9;
+    grid-row: 5/6;
     grid-column: 3/4;
 }
 
 #input8 { 
-    grid-row: 8/9;
+    grid-row: 5/6;
     grid-column: 4/5;
 }
 
 #input9 { 
-    grid-row: 9/10;
+    grid-row: 6/7;
     grid-column: 4/5;
     
 }
